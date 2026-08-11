@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+
+<body>
+
+<form>
+
+<h1>Student Registration</h1>
+
+<table>
+
+<tr>
+    <td>FullName</td>
+    <td>
+        <input type="text" name="fullname"
+               pattern="[A-Za-z ]{3,50}"
+               required>
+    </td>
+</tr>
+
+<tr>
+    <td>Email</td>
+    <td>
+        <input type="email" name="email" required>
+    </td>
+</tr>
+
+<tr>
+    <td>password</td>
+    <td>
+        <input type="password" name="password" pattern = "[A-Za-z0-9]{6,}" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Mobile No</td>
+    <td>
+        <input type="tel" name="mobile"
+               pattern="[0-9]{10}"
+               required>
+    </td>
+</tr>
+
+<tr>
+    <td>Address</td>
+    <td>
+        <textarea name="address" rows="6" cols="25"
+                  required></textarea>
+    </td>
+</tr>
+
+<tr>
+    <td>Nationality</td>
+    <td>
+        <input type="text" name="nationality" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Date Of Birth</td>
+    <td>
+        <input type="date" name="dob" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Gender</td>
+    <td>
+        <input type="radio" name="gender"
+               value="Male" required> Male
+
+        <input type="radio" name="gender"
+               value="Female"> Female
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
