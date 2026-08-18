@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>7.3</title>
+    <link rel="stylesheet" href="7.3.css">
+</head>
+
+<body>
+    <h2>Section Title</h2>
+    <p> (h2 + p) </p>
+
+    <ul>
+        <li>Direct Child 1 (ul > li)</li>
+        <li>
+            Direct Child 2
+            <ol>
+                <li>Nested item inside </li>
+            </ol>
+        </li>
+    </ul>
+
+    <br>
+    <label for="username">User Input:</label>
+    <input type="text" id="username" placeholder="Styled via input[type='text']">
+    
+</body>
+
+</html>
+<style>
+    ul>li {
+        color: rgb(109, 139, 109);
+        font-weight: bold;
+    }
+
+    h2+p {
+        background-color: peru;
+        padding: 10px;
+        border-left: 4px solid black;
+    }
+
+    input[type="text"] {
+        border: 2px solid blue;
+        padding: 8px;
+        border-radius: 4px;
+    }
+</style>
