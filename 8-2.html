@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 5px;
+            font-family: "Times New Roman", serif;
+            font-size: 12px;
+        }
+
+        .page {
+            width: 525px;
+            height: 202px;
+            background-color: #ffa500;
+            border: 10px solid #add8e6;
+            position: relative;
+        }
+
+        /* Header */
+        .header {
+            height: 24px;
+            background-color: #9b0056;
+            color: white;
+            padding: 2px 5px;
+        }
+
+        /* Content title */
+        .content-title {
+            height: 22px;
+            padding: 3px 5px;
+            color: black;
+        }
+
+        /* Main content */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px;
+        }
+
+        /* Left side */
+        .entries {
+            width: 305px;
+        }
+
+        .entry {
+            height: 16px;
+            background-color: black;
+            color: white;
+            margin-bottom: 9px;
+            padding: 2px 4px;
+        }
+
+        /* Right sidebar */
+        .sidebar {
+            width: 163px;
+            height: 63px;
+            background-color: black;
+            color: white;
+            padding: 8px 5px;
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 13px;
+            background-color: blue;
+            color: white;
+            padding: 1px 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="header">
+            Header
+        </div>
+
+        <div class="content-title">
+            Content
+        </div>
+
+        <div class="content">
+
+            <div class="entries">
+                <div class="entry">Entry</div>
+                <div class="entry">Entry</div>
+                <div class="entry">Entry</div>
+            </div>
+
+            <div class="sidebar">
+                Sidebar
+            </div>
+
+        </div>
+
+        <div class="footer">
+            ©Darshan University-Rajkot
+        </div>
+
+    </div>
+
+</body>
+</html>

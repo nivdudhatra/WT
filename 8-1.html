@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 10px;
+            font-family: "Times New Roman", serif;
+            background: white;
+        }
+
+        /* Main container */
+        .page {
+            width: 505px;
+            height: 285px;
+            border: 1px solid #555;
+            display: grid;
+            grid-template-rows: 29px 231px 25px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid green;
+        }
+
+        .logo {
+            width: 100px;
+            height: 28px;
+            border-right: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav {
+            display: flex;
+            gap: 22px;
+            padding-left: 10px;
+        }
+
+        .nav a {
+            color: blue;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+
+        /* Middle section */
+        .content {
+            display: grid;
+            grid-template-columns: 151px 1fr;
+        }
+
+        /* Left menu */
+        .sidebar {
+            border-right: 2px solid green;
+            padding: 9px 8px;
+        }
+
+        .menu-button {
+            width: 133px;
+            height: 31px;
+            margin-bottom: 9px;
+            border: 1px solid #999;
+            background: #f8f8f8;
+            font-family: "Times New Roman", serif;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Right content */
+        .main-content {
+            padding: 15px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .box {
+            height: 91px;
+            border: 2px solid #a000a0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px 15px;
+        }
+
+        .small-box {
+            height: 52px;
+            border: 1px dotted red;
+        }
+
+        /* First row boxes */
+        .box:first-child .small-box {
+            width: 137px;
+        }
+
+        /* Second row boxes */
+        .box:last-child {
+            height: 90px;
+        }
+
+        .box:last-child .small-box {
+            width: 85px;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">Logo Here</div>
+
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <button class="menu-button">RESULT</button>
+                <button class="menu-button">APPLY</button>
+                <button class="menu-button">PLACEMENT</button>
+                <button class="menu-button">RECRUITMENT</button>
+                <button class="menu-button">NEWS</button>
+            </aside>
+
+            <!-- Right Side -->
+            <main class="main-content">
+
+                <div class="box">
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                </div>
+
+                <div class="box">
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                </div>
+
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Footer
+        </footer>
+
+    </div>
+
+</body>
+</html>
