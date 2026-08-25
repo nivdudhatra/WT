@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVault - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">CineVault</a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="favorites.html">Watchlist</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Banner -->
+  <section style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80') center/cover; padding: 6rem 2rem; text-align: center; color: white;">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem;">Welcome to CineVault</h1>
+    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Discover, track, and review your favorite cinematic masterpieces.</p>
+    <a href="movies.html" class="btn">Explore Movies</a>
+  </section>
+
+  <div class="container">
+    <h2>Featured Movies</h2>
+    <div class="movie-grid">
+      <!-- Movie Card 1 -->
+      <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80" alt="Inception">
+        <div class="movie-card-content">
+          <h3>Inception</h3>
+          <p>Sci-Fi | 2010 | ⭐ 8.8</p>
+          <div class="card-actions">
+            <a href="movie-details.html" class="btn" style="flex: 1; padding: 0.4rem;">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Movie Card 2 -->
+      <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=500&q=80" alt="The Dark Knight">
+        <div class="movie-card-content">
+          <h3>The Dark Knight</h3>
+          <p>Action | 2008 | ⭐ 9.0</p>
+          <div class="card-actions">
+            <a href="movie-details.html" class="btn" style="flex: 1; padding: 0.4rem;">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 3rem;">Popular Genres</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+      <a href="movies.html" class="btn btn-outline" style="text-align:center;">Action</a>
+      <a href="movies.html" class="btn btn-outline" style="text-align:center;">Drama</a>
+      <a href="movies.html" class="btn btn-outline" style="text-align:center;">Sci-Fi</a>
+      <a href="movies.html" class="btn btn-outline" style="text-align:center;">Animation</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 CineVault. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVault - Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">CineVault</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html" class="active">Movies</a></li>
+        <li><a href="favorites.html">Watchlist</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Movie Catalog</h1>
+    
+    <!-- Static Filter Mockup -->
+    <div class="filters">
+      <input type="text" placeholder="Search by title...">
+      <select>
+        <option value="">All Genres</option>
+        <option value="Action">Action</option>
+        <option value="Drama">Drama</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+      </select>
+      <select>
+        <option value="">Minimum Rating</option>
+        <option value="9">9+ Stars</option>
+        <option value="8">8+ Stars</option>
+      </select>
+    </div>
+
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80" alt="Inception">
+        <div class="movie-card-content">
+          <h3>Inception</h3>
+          <p>Sci-Fi | 2010 | ⭐ 8.8</p>
+          <div class="card-actions">
+            <a href="movie-details.html" class="btn" style="flex: 1; padding: 0.4rem;">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=500&q=80" alt="The Dark Knight">
+        <div class="movie-card-content">
+          <h3>The Dark Knight</h3>
+          <p>Action | 2008 | ⭐ 9.0</p>
+          <div class="card-actions">
+            <a href="movie-details.html" class="btn" style="flex: 1; padding: 0.4rem;">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 CineVault. All rights reserved.</p>
+  </footer>
+</body>
+</html>

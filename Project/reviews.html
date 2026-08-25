@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVault - Reviews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">CineVault</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="favorites.html">Watchlist</a></li>
+        <li><a href="reviews.html" class="active">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Community Reviews & Ratings</h1>
+    
+    <form style="margin-bottom: 3rem;">
+      <h3>Submit Your Review</h3>
+      <div class="form-group">
+        <label>Movie Title</label>
+        <input type="text" placeholder="e.g., Inception" required>
+      </div>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+        <label>Rating (1-10)</label>
+        <input type="number" min="1" max="10" required>
+      </div>
+      <div class="form-group">
+        <label>Your Review</label>
+        <textarea rows="4" placeholder="Write your thoughts..." required></textarea>
+      </div>
+      <button type="submit" class="btn">Post Review</button>
+    </form>
+
+    <h2>Recent Community Reviews</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color);">
+        <h4>Inception - <span style="color: var(--primary);">⭐ 9/10</span></h4>
+        <p style="margin: 0.5rem 0;">Mind-bending masterpiece!</p>
+        <small style="color: #888;">Review by <strong>Alice</strong> on 8/24/2026</small>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 CineVault. All rights reserved.</p>
+  </footer>
+</body>
+</html>
