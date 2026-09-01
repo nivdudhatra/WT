@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screen Saver</title>
+<style>
+  body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .box1, .box2, .box3, .box4 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: absolute;
+  }
+  .box1 { background-color: red; animation: redball 4s infinite linear; }
+  .box2 { background-color: blue; animation: blueball 4s infinite linear; }
+  .box3 { background-color: green; animation: greenball 4s infinite linear; }
+  .box4 { background-color: yellow; animation: yellowball 4s infinite linear; }
+
+  @keyframes redball {
+    0%, 100% { top: 50%; left: 50%; }
+    25% { top: 0%; left: 0%; }
+    50% { top: 0%; left: 95%; }
+    75% { top: 90%; left: 0%; }
+  }
+  @keyframes blueball {
+    0%, 100% { top: 50%; left: 50%; }
+    25% { top: 90%; left: 95%; }
+    50% { top: 90%; left: 0%; }
+    75% { top: 0%; left: 95%; }
+  }
+  @keyframes greenball {
+    0%, 100% { top: 50%; left: 50%; }
+    25% { top: 90%; left: 0%; }
+    50% { top: 0%; left: 0%; }
+    75% { top: 90%; left: 95%; }
+  }
+  @keyframes yellowball {
+    0%, 100% { top: 50%; left: 50%; }
+    25% { top: 0%; left: 95%; }
+    50% { top: 90%; left: 95%; }
+    75% { top: 0%; left: 0%; }
+  }
+</style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+</body>
+</html>

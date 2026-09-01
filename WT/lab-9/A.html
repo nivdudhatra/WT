@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation: changecolor ;
+            position: absolute;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-direction: reverse;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes changecolor {
+
+            0% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+
+            
+            25% {
+                left: 300px;
+                top: 0;
+                background-color: blue;
+            }
+
+
+            
+            50% {
+                left: 300px;
+                top: 300px;
+                background-color: gray;
+            }
+
+
+            
+            75% {
+                left: 0;
+                top: 300px;
+                background-color: aqua;
+            }
+
+            
+            100% {
+               left: 0;
+                top: 0;
+                background-color: yellow;
+            }
+            
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="div">
+        
+    </div>
+    
+</body>
+</html>
