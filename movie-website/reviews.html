@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Reviews</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <section id="reviews">
+            <h2>User Reviews</h2>
+            <div class="review-list">
+                <article class="review">
+                    <h3>Movie Title 1</h3>
+                    <p><strong>Reviewer:</strong> John Doe</p>
+                    <p><strong>Rating:</strong> ★★★★☆</p>
+                    <p>This movie was fantastic! The storyline was gripping and the performances were top-notch.</p>
+                </article>
+                <article class="review">
+                    <h3>Movie Title 2</h3>
+                    <p><strong>Reviewer:</strong> Jane Smith</p>
+                    <p><strong>Rating:</strong> ★★★☆☆</p>
+                    <p>I enjoyed the movie, but I felt it could have been better in some areas.</p>
+                </article>
+                
+            </div>
+        </section> -->
+
+        <section id="submit-review">
+            <h2>Submit Your Review</h2>
+            <form action="#" method="post">
+            <table>
+                
+                <tr>
+                    <td><label for="movie-title">Movie Title:</label></td>
+                    <td><input type="text" id="movie-title" name="movie-title" required></td>
+                </tr>
+                <tr>
+                    <td><label for="reviewer-name">Your Name:</label></td>
+                    <td><input type="text" id="reviewer-name" name="reviewer-name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="rating">Rating:</label></td>
+                    <td>
+                    <select id="rating" name="rating" required>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="review-text">Your Review:</label></td>
+                    <td><textarea id="review-text" name="review-text" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Submit Review</button></td>
+                </tr>
+                
+            </table>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Movie Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
