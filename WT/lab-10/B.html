@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quary</title>
+    <style>
+        .box1{
+           font-size: 40px;
+           font-family: 'Courier New', Courier, monospace;
+           font-weight: bold;
+        }
+
+        .box2{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+           
+        }
+
+        
+
+
+        @media (max-width : 600px){
+            .box1{
+                font-size: 10px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: lighter;
+                color: blue;
+            }
+            .box2{
+                height: 300px;
+                width: 300px;
+                /* border: 10px solid slategray; */
+                border-radius: 50%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rerum, esse, 
+        adipisci sunt eum animi repudiandae mollitia aut vel corrupti est, quis illum commodi? Rem inventore 
+        perferendis laborum atque. Veniam.</div>
+
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0N2tbRVKPp_0TNQjw-H6NxrwVUQDjxZLNeZEDgEIvhw&s=10" class="box2">
+</body>
+</html>

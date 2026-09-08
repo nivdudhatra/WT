@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C</title>
+    <style>
+        .sidebar{
+            background-color: aqua;
+            width: 50px;
+            border: 2px solid black;
+        }
+
+        .div1{
+            display: none;
+            color: blue;
+            font-size: 12px;
+        }   
+
+        @media (max-width : 600px) {
+
+            .sidebar{
+                display: none;
+            }
+            .div1{
+                display: block;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: chartreuse;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Main Content</h2>
+    <p>a b c d e f g h i j k l m n o p q r s t u v w x y z </p>
+    
+    <div class="sidebar">
+        <nav>
+            <a href="#" >home</a>
+            <a href="#" >favriot</a>
+            <a href="#" >contect</a>
+            <a href="#" >reviwe</a>
+        </nav>
+    </div>
+    <div class="div1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime adipisci quaerat vitae,
+             reiciendis nulla nemo rerum dolore praesentium fuga accusamus soluta fugit 
+             officia autem illo voluptate consectetur tempore vel culpa.
+    </div>
+</body>
+</html>

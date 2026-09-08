@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-Classes Example</title>
+    <style>
+        body {
+
+         font-family: sans-serif; 
+         padding: 20px; 
+        }
+       
+        button:hover { 
+            height: 50px;
+
+            background-color: #0056b3; 
+            color: white;
+            border-radius: 4px;
+        }
+        button {  
+            background-color: #007bff; 
+            color: white;
+        }
+        
+        
+        input:focus { 
+            border-color: green; 
+            outline: none; 
+
+        }
+        input {
+             padding: 8px; 
+             border: 2px solid; 
+             border-radius: 4px;
+        }
+        
+       
+        li:nth-child(odd) { 
+            background-color: #6d3333; 
+        }
+        li:nth-child(even) {
+            background-color: blue; 
+        }
+        li {
+            padding: 8px; margin: 4px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" placeholder="Click to focus me">
+    <button>Hover over me</button>
+    <ul>
+        <li>Item 1 </li>
+        <li>Item 2 </li>
+        <li>Item 3 </li>
+        <li>Item 4</li>
+    </ul>
+</body>
+</html>
